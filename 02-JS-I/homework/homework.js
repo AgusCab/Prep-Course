@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -64,7 +64,10 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
    if(x === y){
-    return 'true';
+    return true ;
+   }
+   else{
+    return false ;
    }
 }
 
@@ -73,10 +76,10 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
    if(str1.lenght === str2.lenght){
-    return 'true';
+    return true;
    }
    else{
-    return 'false';
+    return false;
    }
   
 }
@@ -99,10 +102,10 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num > 50){
-    return 'true';
+    return true;
   }
   else{
-    return 'false';
+    return false;
   }
   
 }
@@ -132,6 +135,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 === 1){
+    //   % 2 !== 0
     return 'true';
   }
   else{
@@ -196,8 +200,8 @@ function esPositivo(numero) {
    else if(numero < 0){
     return "Es negativo";
    }
-   else if( numero === 0){
-    return "False";
+   else{
+    return False;
    }
    
   
