@@ -75,13 +75,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-   if(str1.lenght === str2.lenght){
+
+  if(str1.length === str2.length){
     return true;
-   }
-   else{
-    return false;
-   }
-  
+  }
+  return false;
+   
 }
 
 function menosQueNoventa(num) {
@@ -89,12 +88,12 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num < 90){
-    return 'true';
+    return true;
   }
   else{
-    return 'false';
-  }
+    return false;
   
+}
 }
 
 function mayorQueCincuenta(num) {
@@ -122,10 +121,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 === 0){
-    return 'true';
+    return true;
   }
   else{
-    return 'false';
+    return false;
   }
   
 }
@@ -136,10 +135,10 @@ function esImpar(num) {
   // Tu código:
   if(num % 2 === 1){
     //   % 2 !== 0
-    return 'true';
+    return true;
   }
   else{
-    return 'false';
+    return false;
   }
   
 }
@@ -201,7 +200,7 @@ function esPositivo(numero) {
     return "Es negativo";
    }
    else{
-    return False;
+    return false;
    }
    
   
@@ -211,7 +210,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-   return 'str' + '!';
+   return str + '!';
+   //      concatena
 }
 
 function combinarNombres(nombre, apellido) {
@@ -226,7 +226,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + ' ' + nombre + '!';
+  return 'Hola' + ' ' + nombre + '!';
   
 }
 
@@ -258,7 +258,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euora * 1.20;
+  return euro * 1.20;
   
 }
 
